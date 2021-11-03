@@ -70,6 +70,9 @@ header nav ul {
     width: 150px;
     margin: 5px;
   }
+  .polaroid-box {
+    justify-content: center;
+  }
 }
 
 @media screen and (max-device-width: 1024px) and (min-device-width: 401px) {
@@ -95,6 +98,9 @@ header nav ul {
     width: 170px;
     margin: 5px;
   }
+  .polaroid-box {
+    justify-content: center;
+  }
 }
 @media screen and (min-device-width: 1024px) {
   header nav ul {
@@ -113,11 +119,18 @@ header nav ul {
   }
   .bottom-quote p {
     font-size: 5.6em;
-    margin: 0.5vh 0 0 27vw;
+    margin: 0 0 0 27vw;
   }
   .polaroid {
     width: 230px;
-    margin: 5px;
+    margin: 0;
+  }
+  .polaroid-box {
+    justify-content: space-evenly;
+  }
+  .headline {
+    font-size: 5.6em;
+    margin: 0;
   }
 }
 
@@ -148,5 +161,10 @@ li {
   flex-wrap: wrap;
   align-items: center;
   align-content: center;
-  justify-content: center;
+}
+.headline {
+  font-family: adobe-handwriting-ernie, sans-serif;
+  font-weight: 400;
+  font-style: normal;
+  text-align: center;
 }
