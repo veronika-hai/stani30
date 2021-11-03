@@ -47,7 +47,7 @@ header nav ul {
   align-items: center;
   align-content: center;
 }
-@media screen and (max-device-width: 1024px) {
+@media screen and (max-device-width: 400px) {
   header nav ul {
     gap: 15px;
     width: 65vw;
@@ -57,6 +57,43 @@ header nav ul {
   }
   a {
     font-size: 0.8em;
+  }
+  .quote p {
+    font-size: 1em;
+    margin: 20vw 0 2vh 5vw;
+  }
+  .bottom-quote p {
+    font-size: 2em;
+    margin: 0.5vh 0 0 18%;
+  }
+  .polaroid {
+    width: 150px;
+    margin: 5px;
+  }
+}
+
+@media screen and (max-device-width: 1024px) and (min-device-width: 401px) {
+  header nav ul {
+    gap: 15px;
+    width: 65vw;
+  }
+  header nav ul li {
+    padding: 2px;
+  }
+  a {
+    font-size: 0.8em;
+  }
+  .quote p {
+    font-size: 1em;
+    margin: 20vw 0 2vh 5vw;
+  }
+  .bottom-quote p {
+    font-size: 2.5em;
+    margin: 0.5vh 0 0 30%;
+  }
+  .polaroid {
+    width: 170px;
+    margin: 5px;
   }
 }
 @media screen and (min-device-width: 1024px) {
@@ -69,6 +106,18 @@ header nav ul {
   }
   a {
     font-size: 1.2em;
+  }
+  .quote p {
+    font-size: 1.4em;
+    margin: 5vw 0 2vh 10vw;
+  }
+  .bottom-quote p {
+    font-size: 5.6em;
+    margin: 0.5vh 0 0 27vw;
+  }
+  .polaroid {
+    width: 230px;
+    margin: 5px;
   }
 }
 
@@ -86,13 +135,18 @@ li {
   font-family: adobe-handwriting-frank, sans-serif;
   font-weight: 400;
   font-style: normal;
-  font-size: 1.4em;
-  margin: 5vw 0 0 10vw;
 }
 .bottom-quote p {
   font-family: adobe-handwriting-ernie, sans-serif;
   font-weight: 400;
   font-style: normal;
-  font-size: 5.6em;
-  margin: 19vw 0 0 27vw;
+}
+.polaroid-box {
+  position: relative;
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  align-items: center;
+  align-content: center;
+  justify-content: center;
 }
