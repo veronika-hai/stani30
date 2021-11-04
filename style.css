@@ -49,7 +49,7 @@ header nav ul {
 }
 @media screen and (max-device-width: 400px) {
   header nav ul {
-    gap: 8.5px;
+    gap: 8px;
     width: 65vw;
   }
   header nav ul li {
